@@ -179,7 +179,7 @@ class TruthfulQAGeneration(Task):
                 "pip install bleurt@https://github.com/google-research/bleurt/archive/b610120347ef22b494b6d69b4316e303f5932516.zip#egg=bleurt"
                 "\nWARNING: Installing any other version of bleurt may result in different results."
             )
-        self.bleurt = datasets.load_metric("/data/wklu/Attack/lm-evaluation-harness/lm_eval/utils/bleurt.py")
+        self.bleurt = datasets.load_metric("./lm_eval/utils/bleurt.py")
 
     def has_training_docs(self):
         return False

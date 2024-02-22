@@ -178,7 +178,7 @@ class PEFTLM(BaseLM):
         self,
         device="cuda",
         pretrained="gpt2",
-        peft_path = '/data/wklu/Attack/lm-evaluation-harness/',
+        peft_path = '',
         seed = 0,
         revision="main",
         low_cpu_mem_usage=None,
